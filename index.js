@@ -32,5 +32,4 @@ function currentLine(array) {
     else if (array.shift() === undefined) {
       return "The line is currently empty."
     }
-  }
 }
