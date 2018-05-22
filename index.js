@@ -22,7 +22,7 @@ function currentLine(array) {
   var i = 0
   if (array.shift() !== undefined) {
     for (i = 0; i < array.length; i++) {
-    line = line + parseInt(i) + 1 + array[i]
+    line = line + `${(parseInt(i) + 1)}. ${array[i]}`
     return line
     }
   }
