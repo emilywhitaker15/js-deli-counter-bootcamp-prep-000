@@ -7,9 +7,9 @@ function takeANumber(katzDeliLine, name) {
   return `Welcome, ${name}. You are number ${number} in line.`
 }
 
-function nowServing(katzDeliLine) {
+function nowServing(array) {
   if (katzDeliLine.length > 0) {
-    return `Currently serving ${katzDeliLine[0]}.`
+    return `Currently serving ${array[0]}.`
     katzDeliLine.shift()
     return katzDeliLine
   } 
