@@ -28,7 +28,7 @@ function currentLine(array) {
       line = line + ` ${parseInt(i) + 1}. ${array[i]}`
       return line
     }
-    else if (array.shift() === undefined)
+    else if (array.shift() === undefined) {
       return "The line is currently empty."
     }
   }
