@@ -23,6 +23,7 @@ function currentLine(array) {
   if (array.shift() !== undefined) {
     for (i = 0; i < array.length; i++) {
     line = line + parseInt(i) + 1 + array[i]
+    return line
     }
   }
   else {
