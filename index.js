@@ -21,11 +21,12 @@ function currentLine(array) {
   var line = "The line is currently:"
   var i
   for (i = 0; i < array.length; i++) {
-  if (array.length > 0) {
-    line = line + ` ${(parseInt(i) + 1)}. ${array[i]}`
-    return line
+   if (array.length > 0) {
+      line = line + ` ${(parseInt(i) + 1)}. ${array[i]}`
+      return line
+     }
+    else {
+      return "The line is currently empty."
     }
-  else {
-    return "The line is currently empty."
   }
 }
