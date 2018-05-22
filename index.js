@@ -24,7 +24,7 @@ function currentLine(array) {
    if (array.length > 0 && i + 1 !== array.length) {
       line = line + ` ${(parseInt(i) + 1)}. ${array[i]},`
     } 
-    else if (array.length > 0 $$ i + 1 === array.length) {
+    else if (array.length > 0 && i + 1 === array.length) {
       line = line + ` ${parseInt(i) + 1}. ${array[i]}`
     }
     else {
