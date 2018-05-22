@@ -18,7 +18,7 @@ function nowServing(array) {
 }
 
 function currentLine(array) {
-  line = "The line is currently:"
+  var line = "The line is currently:"
   if (array.shift() !== undefined) {
     for (i = 0; i < array.length; i++) {
     line = line + `${parseInt(i) + 1}. ${array[i]}`
