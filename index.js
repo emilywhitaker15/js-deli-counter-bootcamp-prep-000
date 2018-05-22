@@ -18,6 +18,8 @@ function nowServing(array) {
 }
 
 function currentLine(array) {
-  var i = 0
-  for ()
+  for (i = 0; i < array.length; i++) {
+    
+  }
+  
 }
