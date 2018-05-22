@@ -18,8 +18,13 @@ function nowServing(array) {
 }
 
 function currentLine(array) {
-  for (i = 0; i < array.length; i++) {
-    
+  line = "The line is currently:"
+  if (array.shift() !== undefined) {
+    for (i = 0; i < array.length; i++) {
+    line = line + `${parseInt(i) + 1}. ${array[i]}`
+    }
   }
-  
+  else {
+    return "The line is currently empty."
+  }
 }
