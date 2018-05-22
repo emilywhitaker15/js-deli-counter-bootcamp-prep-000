@@ -20,16 +20,18 @@ function nowServing(array) {
 function currentLine(array) {
   var line = "The line is currently:"
   var i
-  for (i = 0; i < array.length; i++) {
-   if (array.length > 0 && i + 1 !== array.length) {
-      line = line + ` ${(parseInt(i) + 1)}. ${array[i]},`
-    } 
+  if (array.shift() !== undefined) {
+   for (i = 0; i < array.length; i++) {
+    if (array.length > 0 && i + 1 !== array.length) {
+        line = line + ` ${(parseInt(i) + 1)}. ${array[i]},`
+     } 
     else if (array.length > 0 && i + 1 === array.length) {
       line = line + ` ${parseInt(i) + 1}. ${array[i]}`
-    }
-    else {
-      return "The line is currently empty."
-    }
+      }
   }
-  return line
+    return line
+  }  
+  else {
+    return "The line is currently empty."
+  }
 }  
