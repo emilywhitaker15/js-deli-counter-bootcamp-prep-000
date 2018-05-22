@@ -20,12 +20,11 @@ function nowServing(array) {
 function currentLine(array) {
   var line = "The line is currently:"
   var i
-  if (array.shift() !== undefined) {
-    for (i = 0; i < array.length; i++) {
+  for (i = 0; i < array.length; i++) {
+  if (array.length > 0) {
     line = line + ` ${(parseInt(i) + 1)}. ${array[i]}`
     return line
     }
-  }
   else {
     return "The line is currently empty."
   }
