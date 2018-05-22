@@ -32,4 +32,4 @@ function currentLine(array) {
     }
   }
 }
-return line
+console.log(line)
