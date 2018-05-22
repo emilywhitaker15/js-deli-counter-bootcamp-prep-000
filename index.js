@@ -28,4 +28,5 @@ function currentLine(array) {
       return "The line is currently empty."
     }
   }
+  return line
 }
