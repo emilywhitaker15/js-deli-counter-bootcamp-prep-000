@@ -24,7 +24,7 @@ function currentLine(array) {
    if (array.length > 0) {
       line = line + ` ${(parseInt(i) + 1)}. ${array[i]},`
     } 
-    
+    else if (i = )
     else {
       return "The line is currently empty."
     }
