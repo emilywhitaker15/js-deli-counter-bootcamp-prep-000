@@ -21,7 +21,7 @@ function currentLine(array) {
   var line = "The line is currently:"
   var i
   for (i = 0; i < array.length; i++) {
-   if (array.length > 0) {
+   if (array.length > 0 ) {
       line = line + ` ${(parseInt(i) + 1)}. ${array[i]},`
     } 
     else if (i + 1 === array.length) {
