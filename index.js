@@ -22,7 +22,7 @@ function currentLine(array) {
   var i
   for (i = 0; i < array.length; i++) {
    if (array.length > 0) {
-      line = line + ` ${(parseInt(i) + 1)}. ${array[i]}`
+      line = line + ` ${(parseInt(i) + 1)}. ${array[i]},`
     } 
     else {
       return "The line is currently empty."
