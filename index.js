@@ -23,10 +23,10 @@ function currentLine(array) {
   for (i = 0; i < array.length; i++) {
    if (array.length > 0) {
       line = line + ` ${(parseInt(i) + 1)}. ${array[i]}`
-      return line
      }
     else {
       return "The line is currently empty."
     }
+    return line
   }
 }
